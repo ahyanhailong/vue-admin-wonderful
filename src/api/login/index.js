@@ -2,18 +2,18 @@ import request from '@/utils/request'
 
 // 用户登录
 export function signIn(params) {
-    request({
+    return request({
         url: '/user/signIn',
-        methods: 'post',
+        method: 'post',
         data: params
     })
 }
 
 // 用户退出登录
 export function signOut() {
-    request({
+    return request({
         url: '/user/signOut',
-        methods: 'post',
+        method: 'post',
         data: params
     })
 }
